@@ -42,11 +42,11 @@ function SinglePlayer(){
       {error && <p>{error}</p>}
         <div>
             {isLoading?<h1>Loading...</h1>: null}
-            <div key={playerInfo?.id} className="player-card">
-          <div className="player-image-container">
+            <div key={playerInfo?.id} className="single-player-card">
+          <div className="single-player-image-container">
             <img className="player-image" src={playerInfo?.imageUrl} alt={playerInfo?.name} />
           </div>
-          <div className="player-details">
+          <div className="single-player-details">
             <h2>{playerInfo?.name}</h2> 
             <p>Breed: {playerInfo?.breed}</p> 
             <p>Status: {playerInfo?.status}</p>
